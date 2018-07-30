@@ -1,0 +1,21 @@
+.login {
+	&__form{
+		&-container {
+			margin: -1px 0 15px;
+			&-username {
+
+			}
+			&-password {
+				
+			}
+		}
+		&-signup {
+			padding-bottom: 10px;
+		}
+		&-signIn {
+			&-button {
+				width: 100%
+			}
+		}
+	}	
+}

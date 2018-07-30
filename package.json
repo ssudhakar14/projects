@@ -27,6 +27,8 @@
     "@ionic/ng-toolkit": "1.0.0",
     "@ionic/pro": "2.0.3",
     "@ionic/schematics-angular": "1.0.1",
+    "@ngx-translate/core": "^10.0.2",
+    "@ngx-translate/http-loader": "^3.0.1",
     "core-js": "^2.5.3",
     "rxjs": "6.2.2",
     "zone.js": "^0.8.26"
