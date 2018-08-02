@@ -1,9 +1,40 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>signUp</ion-title>
+    <ion-buttons slot="start">
+    	<ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'login.SIGN_UP' | translate}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content class="signUp" padding>
+	<form class="signUp__form"  [formGroup]="signUpForm">
+		<ion-list class="signUp__form-list">
+			<ion-item class="signUp__form-list-item">
+				<ion-label position="floating" class="" clearInput>{{'signUp.NAME' | translate}}</ion-label>
+				<ion-input type="text" formControlName="name"></ion-input>
+			</ion-item>
+			<ion-item class="signUp__form-list-item">
+				<ion-label position="floating" class="" clearInput>{{'signUp.MOBILE_NUMBER' | translate}}</ion-label>
+				<ion-input type="text" formControlName="mobileNumber"></ion-input>
+			</ion-item>
+			<ion-item class="signUp__form-list-item">
+				<ion-label position="floating" class="" clearInput>{{'signUp.EMAIL' | translate}}</ion-label>
+				<ion-input type="text" formControlName="email"></ion-input>
+			</ion-item>
+			<ion-item class="signUp__form-list-item">
+				<ion-label position="floating" class="" clearInput>{{'signUp.PASSWORD' | translate}}</ion-label>
+				<ion-input type="password" formControlName="password"></ion-input>
+			</ion-item>
+			<ion-item class="signUp__form-list-item">
+				<ion-label position="floating" class="" clearInput>{{'signUp.CONFIRM_PASSWORD' | translate}}</ion-label>
+				<ion-input type="password" formControlName="confirmPassword"></ion-input>
+			</ion-item>
+		</ion-list>
+		<ion-grid>
+            <ion-row class="signUp__form-create">
+                <ion-button (click)="submit()" class="signUp__form-create-button"  expand="full" color="primary">{{'signUp.CREATE_USER' | translate }}</ion-button>
+            </ion-row>
+        </ion-grid>
+	</form>
 </ion-content>

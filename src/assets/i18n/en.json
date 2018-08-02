@@ -5,5 +5,13 @@
 		"SIGN_IN": "SIGN IN",
 		"FORGOT_PASSWORD": "Forgot Password",
 		"SIGN_UP": "Sign up"
+	},
+	"signUp": {
+		"CREATE_USER": "Create User",
+		"NAME": "Name",
+		"MOBILE_NUMBER": "Mobile Number",
+		"EMAIL": "Email",
+		"PASSWORD": "Password",
+		"CONFIRM_PASSWORD": "Confirm Password"
 	}
 }

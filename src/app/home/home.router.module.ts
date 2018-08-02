@@ -7,27 +7,20 @@ import { ContactPage } from '../contact/contact.page';
 
 const routes: Routes = [
     {
-        path: 'home',
+        path: '',
         component: HomePage,
         children: [
             {
                 path: 'about',
-                outlet: 'about',
                 component: AboutPage
             },
             {
                 path: 'contact',
-                outlet: 'contact',
                 component: ContactPage
             },
         ]
-    },
-    {
-        path: '',
-        redirectTo: '/home/(about:about)',
-        pathMatch: 'full'
     }
-];
+]; 
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

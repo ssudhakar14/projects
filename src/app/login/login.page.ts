@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { Router } from '@angular/router';
+
+import { SignUpPage } from '../sign-up/sign-up.page'
 
 @Component({
   selector: 'app-login',
@@ -11,7 +14,7 @@ export class LoginPage implements OnInit {
 
 	loginForm: FormGroup;
 
-	constructor(public formBuilder: FormBuilder) { 
+	constructor(public formBuilder: FormBuilder, public router: Router) { 
 		this.loginForm = this.formValidation();
 	}
 
@@ -26,5 +29,10 @@ export class LoginPage implements OnInit {
 			remember: false
 	    });
 	};
+
+	submit() {
+		if(!this.loginForm.valid) return;
+		this.router.navigate(['/home/about']);	
+	}
 
 }

@@ -1,8 +1,7 @@
 <ion-content padding class="login" text-center>
     <!-- <ion-label class="login__error-label" [style.visibility]="showErrorMessage ? 'visible' : 'hidden'">Invalid Credentials</ion-label> -->
-    <form class="login__form" [formGroup]="loginForm" novalidate (ngSubmit)="submit();">
+    <form class="login__form" [formGroup]="loginForm">
         <ion-list class="login__form-container">
-
             <ion-item class="login__form-container-username">
                 <ion-label position="floating" class="login__form-container-username-label" clearInput>{{'login.USER_NAME' | translate }}</ion-label>
                 <ion-input type="text" formControlName="username" maxlength="15"></ion-input>
@@ -16,12 +15,11 @@
         <ion-grid>
             <ion-row class="login__form-signup">
                 <ion-col size="6"><a float-left>{{'login.FORGOT_PASSWORD' | translate }}</a></ion-col>
-                <ion-col size="6"><a float-right>{{'login.SIGN_UP' | translate }}</a></ion-col>
+                <ion-col size="6"><a float-right routerLink="/signUp">{{'login.SIGN_UP' | translate }}</a></ion-col>
             </ion-row>
             <ion-row class="login__form-signIn">
-                <ion-button class="login__form-signIn-button"  expand="full" color="primary">{{'login.SIGN_IN' | translate }}</ion-button>
+                <ion-button (click)="submit()" class="login__form-signIn-button"  expand="full" color="primary">{{'login.SIGN_IN' | translate }}</ion-button>
             </ion-row>
         </ion-grid>
-
     </form>
 </ion-content>

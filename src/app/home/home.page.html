@@ -1,8 +1,8 @@
 <ion-tabs>
-  <ion-tab label="About" icon="information-circle" href="/home/(about:about)">
-    <ion-router-outlet name="about"></ion-router-outlet>
+  <ion-tab label="About" icon="information-circle" [href]="'/home/about'">
+    <ion-router-outlet></ion-router-outlet>
   </ion-tab>
-  <ion-tab label="Contact" icon="contacts" href="/home/(contact:contact)">
-    <ion-router-outlet name="contact"></ion-router-outlet>
+  <ion-tab label="Contact" icon="contacts" [href]="'/home/contact'">
+    <ion-router-outlet></ion-router-outlet>
   </ion-tab>
 </ion-tabs>
