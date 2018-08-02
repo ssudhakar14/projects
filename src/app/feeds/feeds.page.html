@@ -1,0 +1,51 @@
+<ion-header>
+	<ion-toolbar>
+    	<ion-title>Feeds</ion-title>
+  	</ion-toolbar>
+  	<ion-grid>
+  		<ion-row>
+  			<ion-col size="6" text-center>Write post</ion-col>
+  			<ion-col size="6" text-center (click)="acessPhotoLibrary()">Photo library</ion-col>
+  		</ion-row>
+  	</ion-grid>
+</ion-header>
+
+<ion-content padding>
+	<ion-card>
+		<ion-item>
+			<ion-avatar slot="start">
+    			<img [src]="favicon.png">
+  			</ion-avatar>
+  			<ion-label>
+				Saranya posted image
+				<p>22 hours ago</p>
+			</ion-label>
+		</ion-item>
+
+		<ion-card-content>
+
+	 	</ion-card-content>
+	 	<ion-item>
+	 		<ion-icon name="pin" slot="start"></ion-icon>
+	 		<ion-icon name="pin"></ion-icon>
+	 		<ion-icon name="pin" slot="end"></ion-icon>
+	 	</ion-item>
+	</ion-card>
+</ion-content>
+
+<!-- 
+<ion-item>
+	 		<ion-grid>
+	 			<ion-row>
+	 				<ion-col size="4">
+	 					Likes
+	 				</ion-col>
+	 				<ion-col size="4">
+	 					Dislikes
+	 				</ion-col>
+	 				<ion-col size="4">
+	 					Comment
+	 				</ion-col>
+	 			</ion-row>
+	 		</ion-grid>
+	 	</ion-item> -->
